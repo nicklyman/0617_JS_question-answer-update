@@ -20,6 +20,7 @@ footer {
 
 li {
   font-size: 16px;
+  list-style-type: none;
 }
 
 .addText {
@@ -51,4 +52,12 @@ li {
 .glyphicon {
   font-size: 20px;
   color: black;
+}
+
+.icon-key {
+  font-size: 16px;
+}
+
+.legend {
+  float: right;
 }

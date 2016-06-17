@@ -4,6 +4,15 @@
 
 <h2>Questions:</h2>
 
+<div class="container">
+  <div class="row">
+    <p class="legend"><span class="glyphicon glyphicon-question-sign icon-key"></span>: Unanswered questions</p>
+  </div>
+  <div class="row">
+    <p class="legend"><span class="glyphicon glyphicon-education icon-key"></span>: Questions with more than 3 answers</p>
+  </div>
+</div>
+
 <!-- List of questions on home page come from question-tile.hbs -->
 <ul>
   {{#each model.questions as |question|}}
