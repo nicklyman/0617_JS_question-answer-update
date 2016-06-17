@@ -17,7 +17,7 @@ export default Ember.Component.extend({
       var params = {
         question: this.get('question'),
         author: this.get('author'),
-        notes: this.get('notes')
+        notes: this.get('notes'),
       };
       //hides update question form again
       this.set('updateQuestionForm', false);
