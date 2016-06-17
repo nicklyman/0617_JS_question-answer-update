@@ -3,6 +3,7 @@
 // Child of question.js
 
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   //Add new question form hidden by default
@@ -21,6 +22,8 @@ export default Ember.Component.extend({
         author: this.get('author') ? this.get('author') : "",
         notes: this.get('notes') ? this.get('notes') : "",
         answer: this.get('answer') ? this.get('answer') : "",
+        date: new Date(),
+        // date: moment().format('MMMM DD, YYYY HH:MM'),
       };
       //hides new question form
       this.set('addNewQuestion', false);

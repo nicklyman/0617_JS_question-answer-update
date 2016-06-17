@@ -8,5 +8,6 @@ export default Model.extend({
   question: attr(),
   author: attr(),
   notes: attr(),
+  date: attr(),
   answers: hasMany('answer', { async: true })
 });
