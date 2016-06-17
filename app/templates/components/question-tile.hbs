@@ -3,7 +3,7 @@
 <!-- Clicked question link goes to question.hbs -->
 <!-- Hide and show additional notes on click of text -->
 
-<li>{{#link-to 'question' question.id}}{{question.question}} - {{question.author}}{{/link-to}}
+<li>{{#link-to 'question' question.id}}{{number-answers question}} {{question.question}} - {{question.author}}{{/link-to}}
   {{#if notesAreShowing }}
     <p {{action 'notesHide'}}>{{question.notes}}</p>
   {{else}}
