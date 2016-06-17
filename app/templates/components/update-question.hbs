@@ -1,0 +1,29 @@
+<!-- Displays update question form when text is clicked -->
+<!-- Child of question.hbs -->
+<!-- Displayed on question.hbs page -->
+
+{{#if updateQuestionForm}}
+  <h3>Update Question</h3>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="question">Question</label>
+        {{textarea value=question.question id="question" rows=5 class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=question.author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Additional Information</label>
+        {{textarea value=question.notes id="notes" rows=3 class="form-control"}}
+      </div>
+
+      <p {{action 'update' question}}>Save Changes</p>
+    </form>
+  </div>
+{{else}}
+  <p class="updateText" {{action 'updateQuestionForm'}}>Update Question</p>
+{{/if}}

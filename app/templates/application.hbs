@@ -1,0 +1,21 @@
+<!-- Displays header and footer with nav bar links for home, about, and contact pages on each page -->
+
+<div class="container">
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+          <li>{{#link-to 'about'}}About{{/link-to}}</li>
+          <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <h1>You Know Who Knows</h1>
+  <!-- Outlet displays contents of .hbs template depending on route user selects -->
+  <hr>
+    {{outlet}}
+  <hr>
+  <footer>©YouKnowWhoKnows 2016</footer>
+</div>

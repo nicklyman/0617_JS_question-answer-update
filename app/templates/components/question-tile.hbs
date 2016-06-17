@@ -1,0 +1,12 @@
+<!-- Child of question.hbs -->
+<!-- Displays list of questions on index.hbs page -->
+<!-- Clicked question link goes to question.hbs -->
+<!-- Hide and show additional notes on click of text -->
+
+<li>{{#link-to 'question' question.id}}{{question.question}} - {{question.author}}{{/link-to}}
+  {{#if notesAreShowing }}
+    <p {{action 'notesHide'}}>{{question.notes}}</p>
+  {{else}}
+    <p class="displayText" {{action 'notesShow'}}>Show additional information</p>
+  {{/if}}
+</li>

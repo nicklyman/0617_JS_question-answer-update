@@ -1,0 +1,19 @@
+<!-- Question display template -->
+<!-- Child of index.hbs -->
+<!-- Displays question after clicking question link on question-tile.hbs -->
+<!-- Displays list of answers after they are added and saved -->
+<!-- Has "Add Your Answer" for a new answer form, saves to correct question -->
+
+<!-- Gets selected question and author from question.js model -->
+<h3>{{model.question}} - {{model.author}}</h3>
+
+<!-- Displays update question form - goes to update-question.js -->
+{{update-question question=model update="update"}}
+
+<h2>Answers:</h2>
+
+<!-- Answers are listed below from the answer-tile.hbs and are accessed from answers.js model -->
+{{answer-tile answers=model.answers}}
+
+<!-- Receives new answer data from new-answer.js sendAction via question.js route -->
+{{new-answer save="save" question=model}}

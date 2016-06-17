@@ -1,0 +1,24 @@
+{ "questions": [{
+    "question": "What is the highest road in Oregon?",
+    "author": "Bob Roberts",
+    "notes": "I looked in an atlas, but could not find the information I was looking for."
+  }, {
+    "question": "What is the best location for photographing a wolf in the wild?",
+    "author": "Jane Brewer",
+    "notes": "I am planning a trip and have always wanted to see a wolf!"
+  }, {
+    "question": "What is the ratio of rolled oats to water for oatmeal?",
+    "author": "Jon Smith",
+    "notes": "I don't really like to cook."
+  }],
+  "answers": [{
+    "answer": "Steens Mountain Road",
+    "answerer": "Happy Hiker"
+  }, {
+    "answer": "Lamar Valley, Yellowstone National Park",
+    "answerer": "Pat Williams"
+  }, {
+    "answer": "2 parts water, 1 part oats for rolled oats",
+    "answerer": "Shannon F."
+  }]
+}
