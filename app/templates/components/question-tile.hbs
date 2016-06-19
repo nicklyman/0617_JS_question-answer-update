@@ -2,11 +2,16 @@
 <!-- Displays list of questions on index.hbs page -->
 <!-- Clicked question link goes to question.hbs -->
 <!-- Hide and show additional notes on click of text -->
+<!-- Add or remove questions from favorite list - I hope to move this to the question.hbs template for display-->
 
-<li>{{#link-to 'question' question.id}}{{number-answers question}} {{question.question}} - {{question.author}}{{/link-to}}
-  {{#if notesAreShowing }}
-    <p {{action 'notesHide'}}>{{question.notes}}</p>
-  {{else}}
-    <p class="displayText" {{action 'notesShow'}}>Show additional information</p>
-  {{/if}}
-</li>
+<div class="questions">
+  <li>{{#link-to 'question' question.id}}{{number-answers question}} {{question.question}} - {{question.author}}{{/link-to}}
+    {{#if notesAreShowing }}
+      <p {{action 'notesHide'}}>{{question.notes}}</p>
+    {{else}}
+      <p class="displayText" {{action 'notesShow'}}>Show additional information</p>
+    {{/if}}
+    <button class="btn btn-primary btn-xs" {{action 'addToFavorites' question}}>+ Favorites</button>
+    <button class="btn btn-danger btn-xs" {{action 'removeFromFavorites' question}}>- Favorites</button>
+  </li>
+</div>

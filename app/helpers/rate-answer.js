@@ -1,3 +1,4 @@
+// A helper for rating answers with 1 to 5 stars. Hope to use a computed property to list answers in order of stars but this is not working yet.
 import Ember from 'ember';
 
 export function rateAnswer(params) {

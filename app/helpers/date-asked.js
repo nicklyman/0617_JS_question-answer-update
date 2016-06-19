@@ -1,3 +1,4 @@
+//Helper for getting the date and time a question was asked.
 import Ember from 'ember';
 import moment from 'moment';
 
