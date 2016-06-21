@@ -21,9 +21,9 @@
         {{textarea value=question.notes id="notes" rows=3 class="form-control"}}
       </div>
 
-      <p {{action 'update' question}}>Save Changes</p>
+      <button class="btn btn-warning btn-xs" {{action 'update' question}}>Save Changes</button>
     </form>
   </div>
 {{else}}
-  <p class="updateText" {{action 'updateQuestionForm'}}>Update Question</p>
+  <button class="btn btn-warning btn-xs" {{action 'updateQuestionForm'}}>Update Question</button>
 {{/if}}

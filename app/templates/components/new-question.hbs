@@ -22,9 +22,9 @@
           {{textarea value=notes id="notes" rows=3 class="form-control"}}
         </div>
 
-        <button {{action 'save'}}>Save</button>
+        <button class="btn btn-primary btn-xs" {{action 'save'}}>Save</button>
       </form>
     </div>
 {{else}}
-  <p class="addText" {{action 'questionFormShow'}}>Ask a New Question</p>
+  <button class="btn btn-success btn-xs" {{action 'questionFormShow'}}>Ask a New Question</button>
 {{/if}}

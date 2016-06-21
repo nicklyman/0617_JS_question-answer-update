@@ -23,30 +23,10 @@ li {
   list-style-type: none;
 }
 
-.addText {
-  font-size: 16px;
-}
-
-.addText:hover {
-  color: #00cc00;
-  font-weight: bold;
-  font-size: 20px;
-}
-
 .displayText:hover {
   color: #ff3300;
   font-weight: bold;
   font-size: 16px;
-}
-
-.updateText {
-  font-size: 16px;
-}
-
-.updateText:hover {
-  color: #1a75ff;
-  font-weight: bold;
-  font-size: 20px;
 }
 
 .glyphicon {

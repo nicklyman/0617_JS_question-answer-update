@@ -8,6 +8,9 @@
 <h4>{{model.date}}</h4>
 <h3>{{model.question}} - {{model.author}}</h3>
 
+<!-- Instantiates manage-favorites (child element receiving the data from question)-->
+{{manage-favorites question=model}}
+<br>
 <!-- Displays update question form - goes to update-question.js -->
 {{update-question question=model update="update"}}
 
