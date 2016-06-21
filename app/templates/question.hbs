@@ -14,10 +14,20 @@
 <!-- Displays update question form - goes to update-question.js -->
 {{update-question question=model update="update"}}
 
-<h2>Answers:</h2>
+<br>
+<!-- Receives new answer data from new-answer.js sendAction via question.js route -->
+{{new-answer save="save" question=model}}
 
+<br>
+<hr align="left" width="50%">
+<h2>Answers:</h2>
+<br>
 <!-- Answers are listed below from the answer-tile.hbs and are accessed from answers.js model -->
 {{answer-tile answers=model.answers}}
 
-<!-- Receives new answer data from new-answer.js sendAction via question.js route -->
-{{new-answer save="save" question=model}}
+
+
+
+<!-- Trying to display star rating (rating is being returned as null for existing answers and undefined for new answers) -->
+<!-- {{answer-rating answer}} -->
+{{answer-tile answer=model rateAnswer="rateAnswer"}}

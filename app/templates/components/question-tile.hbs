@@ -5,7 +5,7 @@
 <!-- Add or remove questions from favorite list - I hope to move this to the question.hbs template for display-->
 
 <div class="questions">
-  <li>{{#link-to 'question' question.id}}{{number-answers question}} {{question.question}} - {{question.author}}{{/link-to}}
+  <li class="font-16">{{#link-to 'question' question.id}}{{number-answers question}} {{question.question}} - {{question.author}}{{/link-to}}
     {{#if notesAreShowing }}
       <p {{action 'notesHide'}}>{{question.notes}}</p>
     {{else}}

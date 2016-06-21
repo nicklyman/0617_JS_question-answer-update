@@ -1,0 +1,11 @@
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="rating">Answer rating (1 to 5)</label>
+      {{input value=rating}}
+      <!-- Button sends action to rateAnswer method in rate-answer.js -->
+      <button class="btn btn-primary btn-xs" {{action 'rateAnswer' answer}}>Rate Answer!</button>
+      <br><br>
+    </div>
+  </form>
+</div>

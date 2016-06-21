@@ -6,6 +6,6 @@ import { belongsTo, hasMany } from 'ember-data/relationships';
 export default Model.extend({
   answer: attr(),
   answerer: attr(),
-  // rating: attr(),
+  rating: attr(),
   question: belongsTo('question', { async: true })
 });

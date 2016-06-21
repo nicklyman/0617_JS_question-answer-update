@@ -3,7 +3,11 @@
 <ul>
   <!-- Lists answers and authors for each question on question.hbs template -->
   {{#each answers as |answer|}}
-    <li>{{answer.answer}} - {{answer.answerer}}</li>
-    <!-- <button class="btn btn-xs btn-primary" {{action 'rateAnswer' answer}}>Rate Answer!</button> -->
+    <li class="font-16">{{answer.answer}} - {{answer.answerer}}</li>
+
+
+    
+    <!-- Rate the answer form and submit button displayed -->
+    {{rate-answer}}
   {{/each}}
 </ul>
