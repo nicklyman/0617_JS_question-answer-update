@@ -28,19 +28,5 @@ export default Ember.Route.extend({
       });
       this.transitionTo('question', params.question);
     },
-
-
-
-
-    rateAnswer(params, answer) {
-      //completes the rating of the answer, want to display stars - NOT WORKING
-      Object.keys(params).forEach(function(key){
-        if(params[key] !== null){
-          answer.set(key, params[key]);
-        }
-      });
-    answer.save();
-    this.transitionTo('question');
-    },
   }
 });

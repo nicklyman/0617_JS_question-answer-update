@@ -19,6 +19,7 @@ export default Ember.Component.extend({
       var params = {
         answer: this.get('answer') ? this.get('answer') : "",
         answerer: this.get('answerer') ? this.get('answerer') : "",
+        rating: "",
         question: this.get('question'),
       };
       //hides new answer form again

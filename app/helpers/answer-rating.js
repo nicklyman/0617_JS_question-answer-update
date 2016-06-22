@@ -5,9 +5,9 @@ export function answerRating(params) {
   var answer = params[0];
   var star = "Not rated yet";
 
-  if (answer.get('rating') !== "") {
+  if ('rating' !== "") {
     star = "";
-    for (var i = 0; i < 5 && i < answer.get('rating'); i++) {
+    for (var i = 0; i < 5 && i < 'rating'; i++) {
       star = star + '<span class="glyphicon glyphicon-star-empty star-glyph"></span>';
     }
   }

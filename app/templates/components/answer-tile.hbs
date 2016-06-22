@@ -2,12 +2,13 @@
 
 <ul>
   <!-- Lists answers and authors for each question on question.hbs template -->
-  {{#each answers as |answer|}}
+  {{#each sortedAnswers as |answer|}}
     <li class="font-16">{{answer.answer}} - {{answer.answerer}}</li>
+    <!-- Display star rating -->
+    {{answer-rating answer}}
 
 
-    
     <!-- Rate the answer form and submit button displayed -->
-    {{rate-answer}}
+    {{rate-answer rateAnswer="rateAnswer" answer=answer}}
   {{/each}}
 </ul>
