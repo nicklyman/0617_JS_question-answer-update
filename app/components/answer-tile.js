@@ -10,11 +10,11 @@ export default Ember.Component.extend({
   actions: {
     // Rating for answer is saved to Firebase
     rateAnswer(answer, params) {
-      Object.keys(params).forEach(function(key) {
-       if(params[key]!== null) {
-         answer.set(key,params[key]);
-       }
-      });
+      // Object.keys(params).forEach(function(key) {
+       if(params["rating"]!== null) {
+         answer.set("rating",params["rating"]);
+      //  }
+      };
       answer.save();
     },
   }
