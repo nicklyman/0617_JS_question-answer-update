@@ -5,7 +5,10 @@
   {{#each sortedAnswers as |answer|}}
     <li class="font-16">{{answer.answer}} - {{answer.answerer}}</li>
     <!-- Display star rating -->
-    {{answer-rating answer}}
+    {{answer-rating answer.rating}}
+
+    <!-- Not sure why this doesn't work -->
+    <!-- {{answer-rating answer}} -->
 
 
     <!-- Rate the answer form and submit button displayed -->
